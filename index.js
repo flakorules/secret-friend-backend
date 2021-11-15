@@ -1,6 +1,7 @@
 const express = require("express");
 const app = express();
 const cors = require("cors");
+require('dotenv').config();
 const { setSecretFriends } = require("./secretFriendsGenerator");
 
 app.use(express.json());
@@ -17,6 +18,6 @@ app.post("/", (req, res) => {
   res.send(setSecretFriends(friendsList));
 });
 
-app.listen(port, () => {
-  console.log(`Example app listening at http://localhost:${port}`);
+app.listen(process.env.PORT, () => {
+  console.log(`Servidor corriendo en puerto ${process.env.PORT}`);
 });
