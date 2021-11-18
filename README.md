@@ -14,6 +14,13 @@ git clone https://github.com/flakorules/secret-friend-backend.git
 ```sh
 npm install
 ```
-## 3 Ejecutar el siguiente comando:
+## 3 Agregar archivo .env en la raiz del proyecto, e incorporar el número del puerto en el cual se ejecutará la API.
+
+```sh
+PORT=<Tú numero de puerto>
+```
+
+## 4 Ejecutar el siguiente comando, el cual levantará el servidor de desarrollo con la API ejecutándose:
 ```sh
 npm run dev
+```
